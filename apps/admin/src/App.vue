@@ -15,7 +15,11 @@ customDebounce();
 
 // 测试 eslint 是否支持 Type Defined
 let ignoreA: CyEvent = {
-  a: ''
+  a: '',
+  // 测试
+  // CyEvent 不含 ok 属性。ESLint 不做 TypeScript 的类型检测。
+  // TypeScript 的类型检测需自己做，比如：npx tsc --noEmit / npx vue-tsc --noEmit
+  ok: ''
 };
 console.log(ignoreA);
 </script>
