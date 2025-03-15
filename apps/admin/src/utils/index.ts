@@ -12,8 +12,8 @@ export const customDebounce = () => {
   return handler;
 };
 
-// const My: CyEvent = {
-//   a: '',
-//   g: ''
-// };
-// console.log(My);
+const My: CyEvent = {
+  a: ''
+  // g: ''
+};
+console.log(My);

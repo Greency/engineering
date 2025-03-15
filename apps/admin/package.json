@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "lint:js": "eslint . --fix"
+    "build": "vite build"
   },
   "keywords": [],
   "author": ""

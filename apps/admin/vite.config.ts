@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 // 测试 ../../types/env.d.ts 是否被解析
-// console.log(import.meta.env);
+console.log(import.meta.env);
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -17,6 +17,7 @@ export default defineConfig({
         // }
         // 复杂配置 chunk
         manualChunks(id) {
+          console.log(id);
           if (id.includes('src/utils')) {
             return 'utils';
           } else if (id.includes('lodash-es')) {
