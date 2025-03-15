@@ -1,0 +1,8 @@
+{
+  "extends": [
+    // https://www.npmjs.com/package/@vue/tsconfig
+    // 在 node.js 环境中使用 Vue components (比如 SSR, Vitest)
+    "@tsconfig/node22/tsconfig.json",
+    "@vue/tsconfig/tsconfig.json"
+  ]
+}

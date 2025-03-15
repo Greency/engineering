@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // baseUrl 会影响 paths
+    "baseUrl": "./",
+    "paths": {
+      // @ 别名，以便 typescript 能正确解析路径
+      "@/*": ["src/*"]
+    }
+  },
+
+  // 默认情况下，TypeScript 会以当前 tsconfig.json 所处位置为根目录，
+  // 自动解析所有文件（除了 node_modules 和 exclude 指定的文件）
+  // 当 include 有值时，TypeScript 只会解析指定的值，所以此时需要显示的指定需要被解析的目录/文件
+  "include": [
+    "src/**/*.vue",
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "./*.ts",
+    "../../types/*"
+  ],
+
+  // 如果引入的配置，有相对路径（../../xxx）的写法,
+  // 最终 TypeScript 生成的最终配置文件会改变相对路径，比如变成 ../../../xxx，
+  // 所以不推荐在公共配置上使用相对路径的写法
+  "extends": "../../tsconfig.base.json"
+}

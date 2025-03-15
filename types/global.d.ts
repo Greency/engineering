@@ -1,0 +1,3 @@
+interface CyEvent {
+  a: string;
+}
