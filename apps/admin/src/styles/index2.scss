@@ -3,7 +3,8 @@
 .content {
   & > .test-scss-file {
     color: red;
-    // 测试 Stylelint .scss 相关配置
     margin: 20px;
+    // 测试 Stylelint .scss 相关配置
+    // margin: 20px;
   }
 }

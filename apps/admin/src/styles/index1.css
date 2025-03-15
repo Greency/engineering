@@ -1,6 +1,5 @@
 .content > .test-css-file {
   color: blue;
-  margin: 10px;
   /* 测试 Stylelint .css 相关配置 */
-  /* margin: 10px; */
+  margin: 10px;
 }

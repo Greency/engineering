@@ -28,8 +28,9 @@ console.log(ignoreA);
 /* 测试 css tree-shaking */
 .bb {
   display: flex;
-  /* 测试 Stylelint .vue 相关配置 */
   padding: 10rem;
+  /* 测试 Stylelint .vue 相关配置 */
+  /* padding: 10rem; */
 }
 </style>
 
