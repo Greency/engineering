@@ -2,12 +2,15 @@ import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 
 import App from '@/App.vue';
+import { arrowFun } from '@/utils';
 
 const app = createApp(App);
 
 app.use(createPinia());
 
 app.mount('#app');
+
+arrowFun();
 
 // 测试共享的类型定义
 const MyEvent: CyEvent = {
