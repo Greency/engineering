@@ -33,14 +33,15 @@ console.log(ignoreA);
 @tailwind utilities;
 
 /* 测试构建生产环境时， purgecss 插件对 .vue (css) 的 tree-shaking */
+/* 测试效果：去掉所有属性注释，并去掉最后一个的缩进。 */
 .tree-shaking-vue-css {
   /* 测试 Stylelint 对 .vue (css) 代码质量检测以及修复 */
-  /* 有重复属性时，Stylelint 会自动删除多余的，只保留最后一个 */
+  /* 如果有重复属性时，Stylelint 会自动删除多余的，只保留最后一个 */
   /* margin-top: 10px; */
   /* margin-top: 9px; */
 
   /* 测试 Prettier 对 .vue (css) 的格式化 */
-  /* 没有缩进时，Prettier 会自动加上缩进 */
+  /* 如果没有缩进时，Prettier 会自动加上缩进 */
   /* margin-top: 8px; */
 }
 </style>
@@ -58,14 +59,15 @@ console.log(ignoreA);
 }
 
 /* 测试构建生产环境时， purgecss 插件对 .vue (scss) 的 tree-shaking */
+/* 测试效果：去掉所有属性注释，并去掉最后一个的缩进。 */
 .tree-shaking-vue-scss {
   /* 测试 Stylelint 对 .vue (scss) 代码质量检测以及修复 */
-  /* 有重复属性时，Stylelint 会自动删除多余的，只保留最后一个 */
+  /* 如果有重复属性时，Stylelint 会自动删除多余的，只保留最后一个 */
   /* margin-top: 10px; */
   /* margin-top: 9px; */
 
   /* 测试 Prettier 对 .vue (scss) 的格式化 */
-  /* 没有缩进时，Prettier 会自动加上缩进 */
+  /* 如果没有缩进时，Prettier 会自动加上缩进 */
   /* margin-top: 8px; */
 }
 </style>
