@@ -1,5 +1,3 @@
-import type { Config } from 'tailwindcss';
-
 export default {
   // tailwindcss 只会解析 content 指定的目录/文件，
   // 所以 content 必须要配置，保证最大程度的兼容性推荐下面这种全局匹配，不指定特定文件后缀（比如*.{vue,tsx}）
@@ -21,4 +19,4 @@ export default {
     // }
   },
   plugins: []
-} as Config;
+};

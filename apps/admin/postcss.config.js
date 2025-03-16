@@ -1,10 +1,6 @@
-// 需要安装 jiti，不然 postcss-load-config 无法加载 postcss.config.ts
-// https://vite.dev/guide/migration
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
-import purgecss from '@fullhuman/postcss-purgecss';
-
-import type { Config } from 'postcss-load-config';
+import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss';
 
 export default {
   plugins: [
@@ -18,7 +14,7 @@ export default {
     // 适配 Vue 的官方配置：https://purgecss.com/guides/vue.html#install
     ...(process.env.NODE_ENV === 'production'
       ? [
-          purgecss({
+          purgeCSSPlugin({
             content: ['./*.html', './src/**/*.vue', './src/**/*.{css,scss}'],
             defaultExtractor: (content) =>
               content
@@ -34,4 +30,4 @@ export default {
         ]
       : [])
   ]
-} as Config;
+};
