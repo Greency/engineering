@@ -2,7 +2,7 @@
 
 // 查看这篇文章，理解每个配置的含义
 // https://www.yuque.com/codercy/fq6dlh/ii1411sfg6cceht2?singleDoc#
-module.exports = {
+export default {
   // 基础配置，检测 .css
   extends: 'stylelint-config-recommended',
 
