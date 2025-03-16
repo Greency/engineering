@@ -18,6 +18,7 @@ export default defineConfig({
         // 复杂配置 chunk
         manualChunks(id) {
           console.log(id);
+
           if (id.includes('src/utils')) {
             return 'utils';
           } else if (id.includes('lodash-es')) {

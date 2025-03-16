@@ -19,7 +19,7 @@ export default {
     ...(process.env.NODE_ENV === 'production'
       ? [
           purgecss({
-            content: ['./*.html', './src/**/*.vue'],
+            content: ['./*.html', './src/**/*.vue', './src/**/*.{css,scss}'],
             defaultExtractor: (content) =>
               content
                 .replace(/<style[^]+?<\/style>/gi, '')
