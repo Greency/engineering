@@ -1,5 +1,4 @@
 /**
- * @filename: lint-staged.config.js
  * @type {import('lint-staged').Configuration}
  */
 
@@ -21,7 +20,10 @@ const packageJsonPaths = glob.sync(patterns, {
 });
 // 子包相对路径
 const subPackagePaths = packageJsonPaths.map((pkgPath) =>
-  path.dirname(pkgPath)
+  // Windows 的获取的路径格式为 apps\\admin，
+  // 而 lint-staged 的路径格式依然是 apps\admin\xxx
+  // 所以这里需要强制替换下
+  path.dirname(pkgPath.replace(/\\/g, '/'))
 );
 
 // 解决 Monorepo 项目下，vue-tsc 无法正确读取对应子项目的 tsconfig.json 文件

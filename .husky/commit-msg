@@ -1,0 +1,2 @@
+# 执行 commitlint，规范 commit 提交
+npx commitlint --edit

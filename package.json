@@ -4,7 +4,10 @@
   "description": "",
   "keywords": [],
   "author": "",
+  "type": "module",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "@tsconfig/node22": "^22.0.0",
     "@types/lodash-es": "^4.17.12",
