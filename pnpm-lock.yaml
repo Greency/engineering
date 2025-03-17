@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 importers:
@@ -48,6 +48,9 @@ importers:
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.26.1
         version: 8.26.1(@typescript-eslint/parser@8.26.1)(eslint@8.57.1)(typescript@5.7.3)
+      '@typescript-eslint/parser':
+        specifier: ^8.0.0 || ^8.0.0-alpha.0
+        version: 8.26.1(eslint@8.57.1)(typescript@5.7.3)
       '@vitejs/plugin-vue':
         specifier: ^5.2.1
         version: 5.2.1(vite@4.5.9)(vue@3.5.13)
@@ -75,6 +78,12 @@ importers:
       lint-staged:
         specifier: ^15.5.0
         version: 15.5.0
+      postcss:
+        specifier: '>=8.4.29 <9.0.0-0'
+        version: 8.5.3
+      postcss-html:
+        specifier: '>=1.0.0 <2.0.0-0'
+        version: 1.8.0
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
@@ -96,6 +105,9 @@ importers:
       vite:
         specifier: ^4.5.9
         version: 4.5.9(@types/node@22.13.9)(sass@1.85.1)
+      vue-eslint-parser:
+        specifier: ^10.0.0
+        version: 10.1.1(eslint@8.57.1)
       vue-tsc:
         specifier: ^2.2.8
         version: 2.2.8(typescript@5.7.3)
