@@ -12,8 +12,8 @@ module.exports = {
     node: true
   },
 
-  // eslint-plugin-vue 和 @typescript-eslint 都预设了各自的 parser（vue-eslint-parser 和 @typescript-eslint/parser），
-  // 但按照顺序来说，@typescript-eslint 会覆盖 eslint-plugin-vue 预设的 parser，
+  // eslint-plugin-vue 和 @typescript-eslint/eslint-plugin 都预设了各自的 parser（vue-eslint-parser 和 @typescript-eslint/parser），
+  // 但按照顺序来说，@typescript-eslint/eslint-plugin 会覆盖 eslint-plugin-vue 预设的 parser，
   // 但最终是需要基于 vue-eslint-parser 来解析，所以这里要显示的指明 parser。
   parser: 'vue-eslint-parser',
 
@@ -38,7 +38,7 @@ module.exports = {
     'eslint:recommended',
     // 对 Vue 的支持（eslint-plugin-vue）。
     'plugin:vue/recommended',
-    //（@typescript-eslint/eslint-plugin，此插件已包含了 @typescript-eslint/parser）。
+    //（@typescript-eslint/eslint-plugin)。
     // 对 TypeScript 语法的检测（比如：注解，接口，泛型等），关闭可能与 ESLint 产生冲突的规则。
     // ESLint 不做 TypeScript 类型检查，需 TypeScript 自己完成类型检查。比如：npx tsc --noEmit / npx vue-tsc --noEmit。
     'plugin:@typescript-eslint/recommended',
