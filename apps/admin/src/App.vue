@@ -8,9 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import { arrowFun, customDebounce } from '@/utils';
+import { customDebounce } from '@/utils';
 
-arrowFun();
 customDebounce();
 
 // 测试 eslint 是否支持 Type Defined
