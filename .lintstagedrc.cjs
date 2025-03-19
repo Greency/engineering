@@ -33,10 +33,10 @@ function tscHandler() {
       const find = subPackagePaths.find((path) => filename.indexOf(path) > -1);
 
       if (!find) {
-        console.error(
+        console.warn(
           `${filename} 没有对应的包，请确认这个文件所在位置是否正确`
         );
-        process.exit(1);
+        return `vue-tsc ${filename} --noEmit`;
       }
 
       return `vue-tsc --project ${process.cwd()}/${find} --noEmit`;

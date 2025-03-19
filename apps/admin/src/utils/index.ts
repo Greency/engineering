@@ -1,13 +1,16 @@
 import { debounce } from 'lodash-es';
+import { testAsyncAndAwait } from '@/utils/testESBuild.js';
 
 export const arrowFun = () => {
   console.log('This is a arrow function!');
 };
 
-export const customDebounce = () => {
+export const customDebounce = async () => {
   const handler = debounce(() => {
     console.log('debounce handle');
   });
+
+  await testAsyncAndAwait();
 
   return handler;
 };
