@@ -4,8 +4,8 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "webpack --config webpack.dev.cjs",
+    "build": "webpack --config webpack.prod.cjs"
   },
   "keywords": [],
   "author": ""

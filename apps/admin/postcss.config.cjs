@@ -1,8 +1,9 @@
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
-import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss';
+/* eslint-disable @typescript-eslint/no-require-imports */
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
+const { purgeCSSPlugin } = require('@fullhuman/postcss-purgecss');
 
-export default {
+module.exports = {
   plugins: [
     // 处理 tailwindcss
     tailwindcss(),
@@ -10,6 +11,7 @@ export default {
     // 处理兼容性
     autoprefixer(),
 
+    // TODO
     // css tree-shaking，考虑开发时的性能，只在生产环境下运行。
     // 适配 Vue 的官方配置：https://purgecss.com/guides/vue.html#install
     ...(process.env.NODE_ENV === 'production'

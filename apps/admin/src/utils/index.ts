@@ -1,5 +1,5 @@
 import { debounce } from 'lodash-es';
-import { testAsyncAndAwait } from '@/utils/testESBuild.js';
+import { testAsyncAndAwait } from '@/utils/testLegacy.js';
 
 export const arrowFun = () => {
   console.log('This is a arrow function!');

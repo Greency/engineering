@@ -4,5 +4,12 @@
     // 在 node.js 环境中使用 Vue components (比如 SSR, Vitest)
     "@tsconfig/node22/tsconfig.json",
     "@vue/tsconfig/tsconfig.json"
-  ]
+  ],
+  "compilerOptions": {
+    // @vue/tsconfig/tsconfig.json 默认关闭 typescript 输出 .js（noEmit: true），
+    // 需要 ts-loader 输出 .js，所以这里改为 false。
+    "noEmit": false,
+    // fix: Option 'allowImportingTsExtensions' can only be used when either 'noEmit' or 'emitDeclarationOnly' is set.
+    "allowImportingTsExtensions": false
+  }
 }

@@ -1,4 +1,4 @@
-declare module '@/utils/testESBuild.js';
+declare module '@/utils/testLegacy.js';
 
 interface CyEvent {
   a: string;

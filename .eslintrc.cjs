@@ -54,7 +54,9 @@ module.exports = {
   plugins: [],
 
   // 改写规则，优先级最高
-  rules: {},
+  rules: {
+    'vue/multi-word-component-names': 'warn'
+  },
 
   // overrides 对指定文件应用不同的规则
   // fix：在 .vue 中直接使用全局类型（不显示引入），报错 ''xxType' is not defined  no-undef'
