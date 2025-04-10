@@ -5,7 +5,8 @@
     "paths": {
       // @ 别名，以便 typescript 能正确解析路径
       "@/*": ["src/*"]
-    }
+    },
+    "isolatedModules": true
   },
 
   // 默认情况下，TypeScript 会以当前 tsconfig.json 所处位置为根目录，

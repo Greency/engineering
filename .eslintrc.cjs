@@ -54,7 +54,15 @@ module.exports = {
   plugins: [],
 
   // 改写规则，优先级最高
-  rules: {},
+  rules: {
+    // Vue 针对组件名必须是多个字的规则，忽略特定的单字组件名
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['Index']
+      }
+    ]
+  },
 
   // overrides 对指定文件应用不同的规则
   // fix：在 .vue 中直接使用全局类型（不显示引入），报错 ''xxType' is not defined  no-undef'
